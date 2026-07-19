@@ -26,6 +26,9 @@ modules:
     install:
       packages:
         - swayfx
+        - sddm
+        - sddm-wayland-sway
+        - grimshot
         - kitty
         - btop
         - yazi
