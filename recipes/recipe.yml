@@ -22,6 +22,7 @@ modules:
       copr:
         - swayfx/swayfx
         - dejan/lazygit
+        - lihaohong/yazi
     install:
       packages:
         - swayfx
@@ -40,7 +41,7 @@ modules:
         - mpd
         - mpc 
         - ncmpcpp
-        - qtstyleplugins
+        - qt5-qtstyleplugins
         
         
     remove:
