@@ -1,3 +1,6 @@
+# miminally opinionated fedora atomic + swayfx + nvidia drivers courtesy of wayblue. 
+
+
 # brick-by-brick &nbsp; [![bluebuild build badge](https://github.com/s0appy/brick-by-brick/actions/workflows/build.yml/badge.svg)](https://github.com/s0appy/brick-by-brick/actions/workflows/build.yml)
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
