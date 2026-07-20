@@ -40,10 +40,11 @@ modules:
   - type: dnf
     repos:
       copr:
-        - swayfx/swayfx
-        - eddsalkield/swaylock-effects
-        - dejan/lazygit
-        - lihaohong/yazi
+        enable:
+          - swayfx/swayfx
+          - eddsalkield/swaylock-effects
+          - dejan/lazygit
+          - lihaohong/yazi
     install:
       packages:
         - swayfx
@@ -58,8 +59,6 @@ modules:
         - bat
         - ripgrep
         - fd-find
-        - eza
-        - tmux
         - neovim
         - lazygit
         - mako
