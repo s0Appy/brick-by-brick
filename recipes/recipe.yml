@@ -9,7 +9,7 @@ description: This is my personal OS image.
 # =====================================================
 stages:
   - name: autotiling-builder
-    base-image: docker.io/library/fedora:latest
+    from: docker.io/library/fedora:latest  # <-- Changed from base-image to from
     modules:
       - type: script
         snippets:
