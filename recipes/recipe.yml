@@ -40,15 +40,12 @@ modules:
   - type: dnf
     repos:
       copr:
-        enable:
-          - swayfx/swayfx
-          - eddsalkield/swaylock-effects
-          - dejan/lazygit
-          - lihaohong/yazi
+        - swayfx/swayfx
+        - dejan/lazygit
+        - lihaohong/yazi
     install:
       packages:
         - swayfx
-        - swaylock-effects
         - sddm
         - sddm-wayland-sway
         - grimshot
