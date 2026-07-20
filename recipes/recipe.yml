@@ -1,17 +1,37 @@
----
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
 name: brick-by-brick
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
-# the base image to build on top of (FROM) and the version tag to use
+# =====================================================
+# STAGE 1: Compile autotiling-rs from source
+# =====================================================
+stages:
+  - name: autotiling-builder
+    base-image: docker.io/library/fedora:latest
+    modules:
+      - type: script
+        snippets:
+          - dnf install -y cargo git
+          - git clone https://github.com/ammgws/autotiling-rs.git /build
+          - cd /build && cargo build --release
+
+# =====================================================
+# STAGE 2: Base deployment image
+# =====================================================
 base-image: ghcr.io/wayblueorg/sway-nvidia-open
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  # Inject the compiled autotiling binary from Stage 1 into system bin
+  - type: copy
+    from: autotiling-builder
+    src: /build/target/release/autotiling-rs
+    dest: /usr/bin/autotiling-rs
+
   - type: files
     files:
       - source: system
@@ -45,6 +65,7 @@ modules:
         - mpc 
         - ncmpcpp
         - qt5-qtstyleplugins
+        - fastfetch
         
         
     remove:
