@@ -70,8 +70,8 @@ modules:
       packages:
         # example: removing firefox (in favor of the flatpak)
         # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        # - firefox
+        # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - sway #remove base sway
 
   # Re-apply session/greeter overrides AFTER package installs so they don't get clobbered
@@ -86,7 +86,7 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
+          # - org.mozilla.firefox its not worth the headache
           - org.gnome.Loupe
       - scope: user # Also add Flathub user repo, but no user packages
 
