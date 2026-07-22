@@ -49,21 +49,22 @@ modules:
         - sddm
         - sddm-wayland-sway
         - grimshot
-        - kitty
-        - btop
-        - yazi
+        - kitty # foot is also included
+        - btop # eye candy
+        - yazi # objectively correct
         - ncdu
         - bat
         - ripgrep
         - fd-find
-        - neovim
-        - lazygit
+        - neovim # yes
+        - lazygit # yes
         - mako
         - mpd
         - mpc 
         - ncmpcpp
         - qt5-qtstyleplugins
-        - fastfetch
+        - fastfetch # eh
+        - steam-devices #so steam will pickup controlers
         
         
     remove:
