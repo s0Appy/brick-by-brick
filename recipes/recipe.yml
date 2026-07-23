@@ -45,11 +45,18 @@ modules:
         - lihaohong/yazi
     install:
       packages:
-        - swayfx
+        - swayfx # objectively correct
         - sddm
         - sddm-wayland-sway
         - grimshot
+        - mako # the only notifs u need
+        - mpd # music
+        - mpc # music cli
+        - ncmpcpp # eye candy
         - kitty # foot is also included
+        - fish
+        - util-linux-user # provides chsh for fish defaults
+        - fontconfig # needed for nerd font processing
         - btop # eye candy
         - yazi # objectively correct
         - ncdu
@@ -58,12 +65,8 @@ modules:
         - fd-find
         - neovim # yes
         - lazygit # yes
-        - mako
-        - mpd
-        - mpc 
-        - ncmpcpp
-        - qt5-qtstyleplugins
         - fastfetch # eh
+        - qt5-qtstyleplugins
         - steam-devices #so steam will pickup controlers
         
         
@@ -74,6 +77,11 @@ modules:
         # - firefox
         # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - sway #remove base sway
+        
+  # Install Oh My Posh using external script from files/scripts/
+  - type: script
+    scripts:
+      - install-omp.sh
 
   # Re-apply session/greeter overrides AFTER package installs so they don't get clobbered
   - type: files
