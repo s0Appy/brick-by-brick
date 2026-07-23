@@ -1,4 +1,4 @@
-# miminally opinionated fedora atomic + swayfx + nvidia drivers courtesy of wayblue. 
+# 'miminally' opinionated fedora atomic + swayfx + nvidia drivers courtesy of wayblue. 
 
 
 # brick-by-brick &nbsp; [![bluebuild build badge](https://github.com/s0appy/brick-by-brick/actions/workflows/build.yml/badge.svg)](https://github.com/s0appy/brick-by-brick/actions/workflows/build.yml)
