@@ -57,6 +57,7 @@ modules:
         - fish
         - util-linux-user # provides chsh for fish defaults
         - fontconfig # needed for nerd font processing
+        - eza
         - btop # eye candy
         - yazi # objectively correct
         - ncdu
