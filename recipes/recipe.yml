@@ -45,7 +45,7 @@ modules:
         - lihaohong/yazi
     install:
       packages:
-        - swayfx # objectively correct
+        - swayfx # objectively correct /satire
         - sddm
         - sddm-wayland-sway
         - grimshot
@@ -89,7 +89,12 @@ modules:
     files:
       - source: system
         destination: /
-
+  
+  # allow execution to temp fix for nvidia-sleep crashing sway.
+  - type: script
+    snippets:
+      - chmod +x /usr/lib/systemd/system-sleep/sway-suspend-fix 
+      
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
