@@ -1,9 +1,0 @@
-#!/bin/bash
-case "$1" in
-  pre)
-    pkill -STOP -x sway
-    ;;
-  post)
-    pkill -CONT -x sway
-    ;;
-esac
