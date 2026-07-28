@@ -89,11 +89,6 @@ modules:
     files:
       - source: system
         destination: /
-  
-  # allow execution to temp fix for nvidia-sleep crashing sway.
-  - type: script
-    snippets:
-      - chmod +x /usr/lib/systemd/system-sleep/sway-suspend-fix 
       
   - type: default-flatpaks
     configurations:
