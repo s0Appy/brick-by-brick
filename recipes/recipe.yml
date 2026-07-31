@@ -45,6 +45,7 @@ modules:
         - lihaohong/yazi
     install:
       packages:
+        - xorg-x11-drv-nvidia-power
         - swayfx # objectively correct /satire
         - sddm
         - sddm-wayland-sway
