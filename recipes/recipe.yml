@@ -28,7 +28,6 @@ modules:
         - lihaohong/yazi
     install:
       packages:
-        - xorg-x11-drv-nvidia-power
         - grimshot
         - mako # the only notifs u need
         - mpd # music
