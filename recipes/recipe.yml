@@ -55,7 +55,7 @@ modules:
         # example: removing firefox (in favor of the flatpak)
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         # - firefox
-        # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         
   # Install Oh My Posh using external script from files/scripts/
   - type: script
