@@ -28,6 +28,7 @@ modules:
         - lihaohong/yazi
     install:
       packages:
+        - hyprpolkitagent
         - grimshot
         - mako # the only notifs u need
         - mpd # music
