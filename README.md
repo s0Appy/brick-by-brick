@@ -1,4 +1,4 @@
-# 'miminally' opinionated fedora atomic + swayfx + nvidia drivers courtesy of wayblue. 
+# 'highly' opinionated fedora atomic + hyprland + nvidia drivers courtesy of wayblue. This is my tower of trash i built brick by brick
 
 
 # brick-by-brick &nbsp; [![bluebuild build badge](https://github.com/s0appy/brick-by-brick/actions/workflows/build.yml/badge.svg)](https://github.com/s0appy/brick-by-brick/actions/workflows/build.yml)
