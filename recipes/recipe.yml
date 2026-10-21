@@ -26,6 +26,7 @@ modules:
       copr:
         - dejan/lazygit
         - lihaohong/yazi
+        - scottames/awww
     install:
       packages:
         - hyprpolkitagent
@@ -49,7 +50,8 @@ modules:
         - fastfetch # eh
         - qt5-qtstyleplugins
         - steam-devices #so steam will pickup controlers
-        
+        - awww
+        - noctalia
         
     remove:
       packages:
