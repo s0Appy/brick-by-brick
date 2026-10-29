@@ -27,7 +27,7 @@ modules:
         - dejan/lazygit
         - lihaohong/yazi
         - scottames/awww
-        - lionheartp/hyprland
+        - nett00n/hyprland
     install:
       packages:
         - hyprpolkitagent
