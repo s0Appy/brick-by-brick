@@ -27,6 +27,7 @@ modules:
         - dejan/lazygit
         - lihaohong/yazi
         - scottames/awww
+        - solopasha/hyprland
     install:
       packages:
         - hyprpolkitagent
@@ -52,6 +53,8 @@ modules:
         - steam-devices #so steam will pickup controlers
         - awww
         - noctalia
+        - mpv
+        - mpvpaper
         
     remove:
       packages:
