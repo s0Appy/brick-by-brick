@@ -55,6 +55,8 @@ modules:
         - noctalia
         - mpv
         - mpvpaper
+        - libmpv
+        - libsixel
         
     remove:
       packages:
